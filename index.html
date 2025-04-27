@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Curriculum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#footer">Pie de página</a>
+    </div> 
+
+    <div class="botones">
+        <button onclick="mostrarRecuadro('nombre')">Nombre</button>
+        <button onclick="mostrarRecuadro('correo')">Correo</button>
+    </div>
+    
+    <div id="nombre-recuadro" class="recuadro">María Natalia Camacho Chávez</div>
+    <div id="correo-recuadro" class="recuadro">a22100220@ceti.mx</div>
+
+    <section id="inicio">
+        <div class="slider-frame">
+            <div class="imagen-circular">
+                <img src="fotop.jpg" alt="Foto personal">
+            </div>
+          
+            <ul class="slides">
+                <li class="slide active"><img src="slider1.jpg" alt="Imagen 1"></li>
+                <li class="slide"><img src="slider2.jpg" alt="Imagen 2"></li>
+                <li class="slide"><img src="slider3.jpg" alt="Imagen 3"></li>
+                <li class="slide"><img src="slider4.jpg" alt="Imagen 4"></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    <section id="acerca">
+        <h2>Acerca de mí</h2>
+        <div class="contenido">
+            <p>Soy una estudiante de 18 años que estudia desarrollo de software, con especial atención a la programación web y móvil. Hablo inglés, lo que me ha permitido aprender más cosas y ampliar mejor mis conocimientos. Me una persona responsable, organizada y comprometida con todo lo que hago, siempre buscando mejorar y aprender algo nuevo. Aunque la electrónica forma parte de mi formación académica, prefiero centrarme en la programación, ya que es donde realmente encuentro inspiración y motivación. Mi objetivo es seguir desarrollándome como programadora y contribuir a proyectos que combinen innovación y creatividad.</p>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <h2>Formación Académica</h2>
+        <div class="columna">
+            <p>Aunque aún no he tenido la oportunidad de trabajar de manera formal, he podido participar en proyectos escolares que me han ayudado a desarrollarme y aprender mucho en el mundo del software. Entre estos proyectos destaca la creación de una base de datos para un hotel, un trabajo en equipo donde aprendimos a diseñar y gestionar datos de forma eficiente. También he desarrollado mini aplicaciones móviles para practicar programación y entender cómo funcionan la lógica detrás de ellas. Mi proyecto integrador: creé una plataforma similar a "LetterBox", pero enfocada en música, un espacio donde los usuarios podían descubrir, organizar y compartir sus canciones favoritas. Estos proyectos, y muchos otros, me han permitido fortalecer mis habilidades y experimentar con nuevas tecnologías. </p>
+        </div>
+        <div class="columna">
+            <p>Actualmente estudio la carrera de Desarrollo de Software en Tecnologo en 7mo semestres. A lo largo de la carrera he adquirido conocimientos de programación, desde conceptos básicos hasta temas avanzados como el manejo de bases de datos y el diseño de interfaces. Además de aprender sobre eléctronica y llevar acabo varias prácticas para mostrar mi conocimiento sobre los temas. </p>
+        </div>
+    </section>
+    
+    <section id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="trabajo1.png" class="slide active" alt="Proyecto 1">
+                <img src="trabajo2.jpg" class="slide" alt="Proyecto 2">
+                <img src="trabajo3.png" class="slide" alt="Proyecto 3">
+            </div>
+            <button class="portafolio-prev" onclick="cambiarSlide(-1)">Anterior</button>
+            <button class="portafolio-next" onclick="cambiarSlide(1)">Siguiente</button>
+        </div>
+    </section>    
+
+    <footer id="footer">
+        <p id="fecha"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
